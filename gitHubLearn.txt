@@ -152,6 +152,31 @@ API & Webhooks	Automate GitHub integration
 LFS	Store large files efficiently
 GitHub CLI	Manage GitHub from the command line
 
+It looks like you have some misconfiguration with your Git remote. The error messages indicate:
+
+error: remote origin already exists.
+
+This means you've already added a remote repository, so git remote add origin fails.
+remote: Repository not found.
+
+Your repository URL does not match the actual repository name.
+How to Fix It?
+Step 1: Check the Current Remote URL
+Run:
+
+sh
+Copy
+Edit
+git remote -v
+This will show the current remote URLs associated with origin.
+
+Step 2: Remove the Incorrect Remote
+If the remote URL is incorrect, remove it using:
+
+sh
+Copy
+Edit
+git remote remove origin
 
 Best Notes Ever of GitHub 
 
