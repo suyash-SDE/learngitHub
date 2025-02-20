@@ -1,0 +1,51 @@
+1️⃣ Set Up a GitHub Repository
+Create a repository on GitHub.
+
+Initialize Git in your project folder:
+
+powershell
+Copy
+Edit
+git init
+Add a remote repository:
+
+powershell
+Copy
+Edit
+git remote add origin https://github.com/your-username/repository-name.git
+2️⃣ Push Code to GitHub
+Add files to staging:
+
+powershell
+Copy
+Edit
+git add .
+Commit changes:
+
+powershell
+Copy
+Edit
+git commit -m "Initial commit"
+Push code to GitHub:
+
+powershell
+Copy
+Edit
+git branch -M main  # Rename to main if needed
+git push -u origin main
+3️⃣ Clone an Existing Repository
+powershell
+Copy
+Edit
+git clone https://github.com/your-username/repository-name.git
+4️⃣ Pull Latest Changes
+powershell
+Copy
+Edit
+git pull origin main
+5️⃣ Create a New Branch
+powershell
+Copy
+Edit
+git checkout -b feature-branch
+git push -u origin feature-branch
